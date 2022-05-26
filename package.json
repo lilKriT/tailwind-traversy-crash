@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwind build -i src/style.css -o dist/style.css"
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
     "url": "https://github.com/lilKriT/tailwind-traversy-crash/issues"
   },
   "homepage": "https://github.com/lilKriT/tailwind-traversy-crash#readme",
-  "dependencies": {
+  "devDependencies": {
     "tailwindcss": "^3.0.24"
   }
 }
